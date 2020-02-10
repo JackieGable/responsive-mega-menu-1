@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Responsive Mega Menu</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/hamburgers.min.css">
+        <link rel="stylesheet" href="css/header.css">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                width: 100%;
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+            .overflow-hidden {
+                overflow: hidden;
+            }
+            .overflow-scroll {
+                bottom: 0;
+                overflow-y: scroll;
+            }
+            .mattel {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                color: #ccc;
+                padding: 15px;
+                background: #c70a4c;
+                font-weight: 600;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="mattel">Property of Mattel</div>
+        
+		<!-- HEADER -->
+        <header>
+
+            <!-- HEADER PROMO -->
+            <div class="header-promo">
+                <div class="container-fluid">
+                    <div class="row promo-sliver">
+                        <div class="col-xs-12">
+                            <div class="promo-drawer-action">
+                                <span class="see-more"><strong>Featured offers <i class="fas fa-chevron-down"></i></strong></span>
+                                <span class="see-less"><strong>Featured offers <i class="fas fa-chevron-up"></i></strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row promo-drawer">
+                        <div class="promos">
+                            <div class="promo">
+                                <a href="#"><img src="http://via.placeholder.com/370x230" alt="Promo 1" /></a>
+                            </div>
+                            <div class="promo">
+                                <a href="#"><img src="http://via.placeholder.com/370x230" alt="Promo 2" /></a>
+                            </div>
+                            <div class="promo">
+                                <a href="#"><img src="http://via.placeholder.com/370x230" alt="Promo 3" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- HEADER MAIN -->
+            <div class="header-main">
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <!-- DESKTOP NAV -->
+                        <div class="col-xs-12 desktop-nav hidden-xs hidden-sm">
+
+                            <a class="logo" href="https://www.americangirl.com">
+                                <img class="logo" src="img/logo.png" alt="American Girl" >
+                            </a>
+
+                            <!-- SHOP MEGA MENU -->
+                            <div class="menu-group">
+                                <div class="menu-trigger">Shop</div>
+                                <div class="mega-menu shop-menu">
+                                    <div class="col-xs-2 mega-border-right mega-padding-bottom">
+                                        <div><a class="mega-heading" href="https://www.americangirl.com/shop/ag/new">New arrivals</a></div>
+                                        <div><a class="mega-heading" href="https://www.americangirl.com/shop/ag/dolls">Dolls</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/create-your-own/">Create Your Own</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/truly-me">Truly Me</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/girl-of-the-year-luciana">Girl of the Year 2018: Luciana</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/beforever">Historical characters</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/tenney">Tenney & Logan</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/z-yang">Z Yang</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/girl-of-the-year-gabriela">Girl of the Year 2017: Gabriela</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/welliewishers">WellieWishers</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/bitty-baby">Bitty Baby</a></div>
+                                    </div>
+                                    <div class="col-xs-2 mega-border-right mega-padding-bottom">
+                                        <div><a class="mega-heading" href="https://www.americangirl.com/shop/ag/furniture-accessories">Furniture & accessories</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/bed-home">Bed & home</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/school-music">School & music</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/animals-extras">Animals & extras</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/food-dining">Food & dining</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/fashion-accessories">Fashion accessories</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/sports-hobbies">Sports & hobbies</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/hair-spa">Hair & spa</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/furniture-accessories-for-girls">For girls</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/nursery">Baby doll accessories</a></div>
+                                    </div>
+                                    <div class="col-xs-2 mega-border-right mega-padding-bottom">
+                                        <div><a class="mega-heading" href="https://www.americangirl.com/shop/ag/clothing">Clothing</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/create-your-own/">Create Your Own</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/matching-doll-girl-sets">Matching doll-girl sets</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/18-inch-doll-clothes">18-inch doll clothes</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/casual">Casual</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/pajamas">Pajamas</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/special-occasion">Special occasion</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/activewear">Sports & hobbies</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/mix-match-outfits">Mix & match</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/girl-clothing">Girl clothing</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/welliewishers-clothing">WellieWishers</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/bitty-baby-clothing">Baby doll clothing</a></div>
+                                    </div>
+                                    <div class="col-xs-2 mega-border-right mega-padding-bottom">
+                                        <div><a class="mega-heading" href="https://www.americangirl.com/shop/ag/bookstore">Books</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/advice-activities">Advice & activities</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/historical-fiction">Historical fiction</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/contemporary-fiction">Contemporary fiction</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/early-readers">Early readers</a></div>
+                                        <div><a class="mega-heading" href="https://www.americangirl.com/shop/ag/doll-care">Doll care</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/doll-care-storage">Styling tools & storage</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/doll-hair-skin-care">Care tips</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/doll-hospital">Doll Hospital & repairs</a></div>
+                                        <div><a class="mega-heading" href="https://www.americangirl.com/shop/ag/customer-favorites">More favorites</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/american-girl-logo-shop">AG Logo Shop</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/magazine"><em>American Girl</em> magazine</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/mega-construx">Mega Construx</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/movies">Movies & DVDs</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/agrewards">AG Rewards</a></div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <div><a class="mega-heading" href="https://www.americangirl.com/shop/ag/sale">Sale: Up to 70% off</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/while-supplies-last">Savings on special extras</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/promos">All current offers</a></div>
+                                        <div><a class="mega-heading" href="https://www.americangirl.com/shop/ag/gift-guide">Gift Guide</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/birthday-gift-ideas">Birthday gifts</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/gift-card">Gift cards</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/gifts-for-ages-8-and-up">Ages 8+</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/gifts-for-ages-5-and-up">Ages 5+</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/gifts-for-ages-3-and-up">Ages 3+</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/under-30">Under $30</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/under-100">Under $100</a></div>
+                                        <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/over-100">Over $100</a></div>
+                                    </div>
+                                    <div class="col-xs-2 no-padding">
+                                        <img class="img-responsive pull-right" src="img/shop-espot-promo.png" alt="Free shipping on orders $100+"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- VISIT MEGA MENU -->
+                            <div class="menu-group">
+                                <div class="menu-trigger">Visit</div>
+                                <div class="mega-menu visit-menu">
+                                    <div class="col-xs-4 mega-border-right mega-padding-top mega-padding-bottom text-center">
+                                        <a class="inline-block" href="https://www.americangirl.com/intro2ag/pages/store-experience.html"><img class="img-responsive" src="img/visit-experiences.png" alt="In-store experiences"/></a>
+                                    </div>
+                                    <div class="col-xs-4 mega-border-right mega-padding-bottom">
+                                        <div class="col-xs-5 no-padding">
+                                            <div class="mega-heading">U.S. locations</div>
+                                            <div><a class="mega-link" href="https://www.americangirl.com/retail/atlanta.php">Atlanta</a></div>
+                                            <div><a class="mega-link" href="https://www.americangirl.com/retail/boston.php">Boston</a></div>
+                                            <div><a class="mega-link" href="https://www.americangirl.com/retail/charlotte.php">Charlotte</a></div>
+                                            <div><a class="mega-link" href="https://www.americangirl.com/retail/chicago.php">Chicago</a></div>
+                                            <div><a class="mega-link" href="https://www.americangirl.com/retail/columbus.php">Columbus</a></div>
+                                            <div><a class="mega-link" href="https://www.americangirl.com/retail/dallas.php">Dallas</a></div>
+                                            <div><a class="mega-link" href="https://www.americangirl.com/retail/denver.php">Denver</a></div>
+                                            <div><a class="mega-link" href="https://www.americangirl.com/retail/houston.php">Houston</a></div>
+                                            <div><a class="mega-link" href="https://www.americangirl.com/retail/kansas_city.php">Kansas City</a></div>
+                                            <div><a class="mega-link" href="https://www.americangirl.com/retail/los_angeles.php">Los Angeles</a></div>
+                                            <div><a class="mega-link" href="https://www.americangirl.com/retail/miami.php">Miami</a></div>
+                                            <div><a class="mega-link" href="https://www.americangirl.com/retail/minnesota.php">Minnesota</a></div>
+                                            <div><a class="mega-link" href="https://www.americangirl.com/retail/nashville.php">Nashville</a></div>
+                                            <div><a class="mega-link" href="https://www.americangirl.com/retail/new_york_city.php">New York City</a></div>
+                                            <div><a class="mega-link" href="https://www.americangirl.com/retail/orlando.php">Orlando</a></div>
+                                        </div>
+                                        <div class="col-xs-7 no-padding">
+                                            <div class="mega-heading">&nbsp;</div>
+                                            <div><a class="mega-link" href="https://www.americangirl.com/retail/san_francisco.php">San Francisco Bay Area</a></div>
+                                            <div><a class="mega-link" href="https://www.americangirl.com/retail/scottsdale.php">Scottsdale</a></div>
+                                            <div><a class="mega-link" href="https://www.americangirl.com/retail/seattle.php">Seattle</a></div>
+                                            <div><a class="mega-link" href="https://www.americangirl.com/retail/washington_dc.php">Washington, D.C.</a></div>
+                                            <div class="mega-heading">International locations</div>
+                                            <div><a class="mega-link" href="https://www.americangirl.com/retail/canada.php">Canada</a></div>
+                                            <div><a class="mega-link" href="https://www.americangirl.com/retail/middle_east.php">Middle East</a></div>
+                                            <div class="mega-margin-top">
+                                                <img class="img-responsive" src="img/visit-loc-espot.png" alt="Ready to make a reservation?"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4 mega-padding-top mega-padding-bottom text-center">
+                                        <a class="inline-block mega-margin-bottom" href="#"><img class="img-responsive" src="img/visit-espot1.png" alt="Discover what's next"/></a>
+                                        <img class="img-responsive inline-block" src="img/visit-espot2.png" alt="Limited time summer smoothie"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- DISCOVER MEGA MENU -->
+                            <div class="menu-group">
+                                <div class="menu-trigger">Discover</div>
+                                <div class="mega-menu discover-menu">
+                                    <div class="col-xs-2 mega-border-right no-padding">
+                                        <div class="discover-heading color-berry">
+                                            <img class="img-responsive pull-left mega-margin-right discover-star" src="img/discover-inner-star-tag.png" alt="Promo alt copy"/>
+                                            Who we are
+                                        </div>
+                                        <div class="text-center">
+                                            <a class="inline-block" href="https://www.americangirl.com/shop/ag/who-we-are"><img class="img-responsive" src="img/discover-character-counts-2.png" alt="Promo alt copy"/></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 mega-border-right no-padding">
+                                        <div class="discover-heading mega-margin-left color-purple">What we offer...</div>
+                                        <div class="mega-flex">
+                                            <div class="col-xs-4 mega-border-right">
+                                                <div class="discover-intro color-purple">...for little girls to take first steps toward caring and friendship</div>
+                                                <div><a class="mega-link" href="https://www.americangirl.com/intro2ag/pages/bitty_baby.html">Bitty Baby <span class="light-text">(ages 3+)</span></a></div>
+                                                <div><a class="mega-link" href="https://www.americangirl.com/intro2ag/pages/wellie_wishers.html">WellieWishers <span class="light-text">(ages 5+)</span></a></div>
+                                                <div class="mega-no-visibility">
+                                                    <img class="img-responsive" src="img/spacer.jpg" alt="Spacer image"/>
+                                                </div>
+                                                <div class="mega-absolute-bottom text-center">
+                                                    <img class="img-responsive inline-block" src="img/discover-little-girl-2.png" alt="Promo alt copy"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-4 mega-border-right">
+                                                <div class="discover-intro color-purple">...for girls ages 8+ to learn timely lessons through timeless stories</div>
+                                                <div><a class="mega-link" href="https://www.americangirl.com/intro2ag/pages/historical_characters.html">Historical characters</a></div>
+                                                <div><a class="mega-link" href="https://www.americangirl.com/intro2ag/pages/contemporary_characters.html">Contemporary characters</a></div>
+                                                <div class="mega-no-visibility">
+                                                    <img class="img-responsive" src="img/spacer.jpg" alt="Spacer image"/>
+                                                </div>
+                                                <div class="mega-absolute-bottom text-center">
+                                                    <img class="img-responsive inline-block" src="img/discover-characters-2.png" alt="Promo alt copy"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <div class="discover-intro color-purple">...for girls ages 8+ to gain confidence through self-expression and self-discovery</div>
+                                                <div><a class="mega-link" href="https://www.americangirl.com/intro2ag/pages/trulyme.html">Truly Me</a></div>
+                                                <div><a class="mega-link" href="https://www.americangirl.com/create-your-own/">Create Your Own</a></div>
+                                                <div><a class="mega-link" href="https://www.americangirl.com/shop/ag/advice-activities">Advice & Activities</a></div>
+                                                <div class="mega-no-visibility">
+                                                    <img class="img-responsive" src="img/spacer.jpg" alt="Spacer image"/>
+                                                </div>
+                                                <div class="mega-absolute-bottom text-center">
+                                                    <img class="img-responsive inline-block" src="img/discover-tm-2.png" alt="Promo alt copy"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4 mega-padding-bottom">
+                                        <div class="discover-heading color-blue">How we educate and enrich</div>
+                                        <div class="discover-intro color-blue">Featured articles to help parents grow strong and creative girls</div>
+                                        <a class="discover-article mega-border-top" href="https://www.americangirl.com/explore/">
+                                            <div class="discover-article-text pull-left">Celebrate Women's History and Movements that Shaped a Nation</div>
+                                            <div class="discover-article-image pull-right"><img class="img-responsive pull-right" src="https://via.placeholder.com/430x267" alt="Article copy" /></div>
+                                            <div class="clearfix"></div>
+                                        </a>
+                                        <a class="discover-article mega-border-top" href="https://www.americangirl.com/explore/">
+                                            <div class="discover-article-text pull-left">Introduce Your Girl to Engineering, Today and Every Day</div>
+                                            <div class="discover-article-image pull-right"><img class="img-responsive pull-right" src="https://via.placeholder.com/430x267" alt="Article copy" /></div>
+                                            <div class="clearfix"></div>
+                                        </a>
+                                        <a class="discover-article mega-border-top mega-border-bottom" href="https://www.americangirl.com/explore/">
+                                            <div class="discover-article-text pull-left">Character Counts: Our Purpose. Your Girls. Our World.</div>
+                                            <div class="discover-article-image pull-right"><img class="img-responsive pull-right" src="https://via.placeholder.com/430x267" alt="Article copy" /></div>
+                                            <div class="clearfix"></div>
+                                        </a>
+                                        <a class="discover-see-more" href="https://www.americangirl.com/explore/">See all articles <i class="fas fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pull-right">
+                                
+                                <!-- SEARCH -->
+                                <div class="nav-search">
+                                    <form>
+                                        <input placeholder="Search" name="search" type="text">
+                                        <button type="submit"><i class="fa fa-search"></i></button>
+                                    </form>
+                                </div>
+
+                                <!-- REWARDS/ACCOUNT -->
+                                <div class="rewards-account">
+                                    <a href="https://www.americangirl.com/shop/AjaxLogonForm?catalogId=10601&myAcctMain=1&langId=-1&storeId=10651">My Account</a>
+                                </div>
+
+                                <!-- SHOPPING CART -->
+                                <div class="shopping-cart">
+                                    <a href="https://www.americangirl.com/shop/RESTOrderCalculate?calculationUsageId=-1&updatePrices=1&doConfigurationValidation=Y&catalogId=10601&errorViewName=AjaxOrderItemDisplayView&orderId=.&langId=-1&storeId=10651&URL=%2Fshop%2FAjaxOrderItemDisplayView"><img src="img/cart.png" alt="Shopping Cart" /></a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- MOBILE NAV -->
+                        <div class="col-xs-12 mobile-nav visible-xs visible-sm">
+                            <!-- HAMBURGER -->
+                            <div class="ham-container">
+                                <button class="hamburger hamburger--squeeze" type="button">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                            <!-- MOBILE LOGO -->
+                            <a class="mobile-logo" href="https://www.americangirl.com">
+                                <img src="img/logo-ag-mobile.png" alt="American Girl" />
+                            </a>
+                            <div class="pull-right">
+                                <!-- MOBILE SEARCH -->
+                                <div class="mobile-search pull-left">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <!-- SHOPPING CART -->
+                                <div class="mobile-cart pull-left">
+                                    <a href="https://www.americangirl.com/shop/RESTOrderCalculate?calculationUsageId=-1&updatePrices=1&doConfigurationValidation=Y&catalogId=10601&errorViewName=AjaxOrderItemDisplayView&orderId=.&langId=-1&storeId=10651&URL=%2Fshop%2FAjaxOrderItemDisplayView"><img src="img/cart.png" alt="Shopping Cart" /></a>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- MOBILE SEARCH BOX -->
+            <div class="mobile-search-box">
+                <form>
+                    <input class="search-box pull-left" placeholder="Search" name="search" type="text">
+                    <button class="pull-right" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+                <div class="clearfix"></div>
+            </div>
+
+            <!-- MOBILE MENU -->
+            <div class="mobile-menu">
+                <!-- SHOP -->
+                <div class="category">
+                    <div class="category-action">
+                        <a href="https://www.americangirl.com/">Shop</a>
+                        <i class="fas fa-plus pull-right"></i>
+                        <i class="fas fa-minus pull-right"></i>
+                    </div>
+                    <div class="category-drawer">
+                        <a class="mobile-nav-link" href="https://www.americangirl.com/shop/new">New arrivals</a>
+                        <!-- DOLLS -->
+                        <div class="sub-category">
+                            <div class="sub-category-action">
+                                <a href="https://www.americangirl.com/shop/dolls">Dolls</a>
+                                <i class="fas fa-chevron-right pull-right"></i>
+                                <i class="fas fa-chevron-down pull-right"></i>
+                            </div>
+                            <div class="sub-category-drawer">
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/create-your-own/">Create Your Own</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/truly-me">Truly Me</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/girl-of-the-year-luciana">Girl of the Year 2018: Luciana</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/beforever">Historical characters</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/tenney">Tenney & Logan</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/z-yang">Z Yang</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/girl-of-the-year-gabriela">Girl of the Year 2017: Gabriela</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/welliewishers">WellieWishers</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/bitty-baby">Bitty Baby</a>
+                            </div>
+                        </div>
+                        <!-- FURNITURE & ACCESSORIES -->
+                        <div class="sub-category">
+                            <div class="sub-category-action">
+                                <a href="https://www.americangirl.com/shop/furniture-accessories">Furniture & accessories</a>
+                                <i class="fas fa-chevron-right pull-right"></i>
+                                <i class="fas fa-chevron-down pull-right"></i>
+                            </div>
+                            <div class="sub-category-drawer">
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/bed-home">Bed & home</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/school-music">School & music</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/animals-extras">Animals & extras</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/food-dining">Food & dining</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/fashion-accessories">Fashion accessories</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/sports-hobbies">Sports & hobbies</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/hair-spa">Hair & spa</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/furniture-accessories-for-girls">For girls</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/nursery">Baby doll accessories</a>
+                            </div>
+                        </div>
+                        <!-- CLOTHING -->
+                        <div class="sub-category">
+                            <div class="sub-category-action">
+                                <a href="https://www.americangirl.com/shop/clothing">Clothing</a>
+                                <i class="fas fa-chevron-right pull-right"></i>
+                                <i class="fas fa-chevron-down pull-right"></i>
+                            </div>
+                            <div class="sub-category-drawer">
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/create-your-own/">Create Your Own</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/matching-doll-girl-sets">Matching doll-girl sets</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/18-inch-doll-clothes">18-inch doll clothes</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/casual">Casual</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/pajamas">Pajamas</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/special-occasion">Special occasion</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/activewear">Sports & hobbies</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/mix-match-outfits">Mix & match</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/girl-clothing">Girl clothing</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/welliewishers-clothing">WellieWishers</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/bitty-baby-clothing">Baby doll clothing</a>
+                            </div>
+                        </div>
+                        <!-- BOOKS -->
+                        <div class="sub-category">
+                            <div class="sub-category-action">
+                                <a href="https://www.americangirl.com/shop/bookstore">Books</a>
+                                <i class="fas fa-chevron-right pull-right"></i>
+                                <i class="fas fa-chevron-down pull-right"></i>
+                            </div>
+                            <div class="sub-category-drawer">
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/advice-activities">Advice & activities</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/historical-fiction">Historical fiction</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/contemporary-fiction">Contemporary fiction</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/early-readers">Early readers</a>
+                            </div>
+                        </div>
+                        <!-- DOLL CARE -->
+                        <div class="sub-category">
+                            <div class="sub-category-action">
+                                <a href="https://www.americangirl.com/shop/doll-care">Doll care</a>
+                                <i class="fas fa-chevron-right pull-right"></i>
+                                <i class="fas fa-chevron-down pull-right"></i>
+                            </div>
+                            <div class="sub-category-drawer">
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/doll-care-storage">Styling tools & storage</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/doll-hair-skin-care">Care tips</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/doll-hospital">Doll Hospital & repairs</a>
+                            </div>
+                        </div>
+                        <!-- MORE FAVORITES -->
+                        <div class="sub-category">
+                            <div class="sub-category-action">
+                                <a href="https://www.americangirl.com/shop/customer-favorites">More favorites</a>
+                                <i class="fas fa-chevron-right pull-right"></i>
+                                <i class="fas fa-chevron-down pull-right"></i>
+                            </div>
+                            <div class="sub-category-drawer">
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/american-girl-logo-shop">AG Logo Shop</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/magazine">American Girl magazine</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/mega-construx">Mega Contrux</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/movies">Movies & DVDs</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/agrewards">AG Rewards</a>
+                            </div>
+                        </div>
+                        <!-- SALE -->
+                        <div class="sub-category">
+                            <div class="sub-category-action">
+                                <a href="https://www.americangirl.com/shop/sale">Sale: Up to 70% off</a>
+                                <i class="fas fa-chevron-right pull-right"></i>
+                                <i class="fas fa-chevron-down pull-right"></i>
+                            </div>
+                            <div class="sub-category-drawer">
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/while-supplies-last">Savings on special extras</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/promos">All current offers</a>
+                            </div>
+                        </div>
+                        <!-- GIFT GUIDE -->
+                        <div class="sub-category">
+                            <div class="sub-category-action">
+                                <a href="https://www.americangirl.com/shop/gift-guide">Gift Guide</a>
+                                <i class="fas fa-chevron-right pull-right"></i>
+                                <i class="fas fa-chevron-down pull-right"></i>
+                            </div>
+                            <div class="sub-category-drawer">
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/birthday-gift-ideas">Birthday gifts</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/gift-card">Gift cards</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/gifts-for-ages-8-and-up">Ages 8+</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/gifts-for-ages-5-and-up">Ages 5+</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/gifts-for-ages-3-and-up">Ages 3+</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/under-30">Under $30</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/under-100">Under $100</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/shop/over-100">Over $100</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- VISIT -->
+                <div class="category">
+                    <div class="category-action">
+                        <a href="https://www.americangirl.com/retail/">Visit</a>
+                        <i class="fas fa-plus pull-right"></i>
+                        <i class="fas fa-minus pull-right"></i>
+                    </div>
+                    <div class="category-drawer">
+                        <a class="mobile-nav-link" href="https://www.americangirl.com/intro2ag/pages/store-experience.html">Explore what's in store</a>
+                        <!-- US LOCATIONS -->
+                        <div class="sub-category">
+                            <div class="sub-category-action">
+                                <a href="https://www.americangirl.com/retail/">U.S. locations</a>
+                                <i class="fas fa-chevron-right pull-right"></i>
+                                <i class="fas fa-chevron-down pull-right"></i>
+                            </div>
+                            <div class="sub-category-drawer">
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/retail/atlanta.php">Atlanta</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/retail/boston.php">Boston</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/retail/charlotte.php">Charlotte</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/retail/chicago.php">Chicago</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/retail/columbus.php">Columbus</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/retail/dallas.php">Dallas</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/retail/denver.php">Denver</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/retail/houston.php">Houston</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/retail/kansas_city.php">Kansas City</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/retail/los_angeles.php">Los Angeles</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/retail/miami.php">Miami</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/retail/minneapolis.php">Minneapolis</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/retail/nashville.php">Nashville</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/retail/new_york_city.php">New York City</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/retail/orlando.php">Orlando</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/retail/san_francisco.php">San Francisco Bay Area</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/retail/scottsdale.php">Scottsdale</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/retail/seattle.php">Seattle</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/retail/washington_dc.php">Washington, D.C.</a>
+                            </div>
+                        </div>
+                        <!-- INTERNATIONAL LOCATIONS -->
+                        <div class="sub-category">
+                            <div class="sub-category-action">
+                                <a href="https://www.americangirl.com/retail/">International locations</a>
+                                <i class="fas fa-chevron-right pull-right"></i>
+                                <i class="fas fa-chevron-down pull-right"></i>
+                            </div>
+                            <div class="sub-category-drawer">
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/retail/canada.php">Canada</a>
+                                <a class="mobile-nav-link" href="https://www.americangirl.com/retail/middle_east.php">Middle East</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- DISCOVER -->
+                <div class="category">
+                    <div class="category-action">
+                        <a href="https://www.americangirl.com/explore/">Discover</a>
+                        <i class="fas fa-plus pull-right"></i>
+                        <i class="fas fa-minus pull-right"></i>
+                    </div>
+                    <div class="category-drawer">
+                        <a class="mobile-nav-link" href="https://www.americangirl.com/shop/who-we-are">Who we are</a>
+                        <!-- WHAT WE OFFER -->
+                        <div class="sub-category">
+                            <div class="sub-category-action">
+                                <a href="https://www.americangirl.com/shop/">What we offer</a>
+                                <i class="fas fa-chevron-right pull-right"></i>
+                                <i class="fas fa-chevron-down pull-right"></i>
+                            </div>
+                            <div class="sub-category-drawer">
+                                <a class="mobile-nav-link" href="#">Bitty Baby <span>(ages 3+)</span></a>
+                                <a class="mobile-nav-link" href="#">WellieWishers <span>(ages 5+)</span></a>
+                                <a class="mobile-nav-link" href="#">Historical characters <span>(ages 8+)</span></a>
+                                <a class="mobile-nav-link" href="#">Contemporary characters <span>(ages 8+)</span></a>
+                                <a class="mobile-nav-link" href="#">Truly Me <span>(ages 8+)</span></a>
+                                <a class="mobile-nav-link" href="#">Create Your Own <span>(ages 8+)</span></a>
+                                <a class="mobile-nav-link" href="#">Advice & Activities <span>(ages 8+)</span></a>
+                            </div>
+                        </div>
+                        <!-- HOW WE EDUCATE AND ENRICH -->
+                        <div class="sub-category">
+                            <div class="sub-category-action">
+                                <a href="https://www.americangirl.com/shop/">How we educate and enrich</a>
+                                <i class="fas fa-chevron-right pull-right"></i>
+                                <i class="fas fa-chevron-down pull-right"></i>
+                            </div>
+                            <div class="sub-category-drawer">
+                                <a class="mobile-nav-link" href="#">Celebrate Women's History and Movements that Shaped a Nation</a>
+                                <a class="mobile-nav-link" href="#">Introduce Your Girl to Engineering, Today and Every Day</a>
+                                <a class="mobile-nav-link" href="#">Character Counts: Our Purpose. Your Girls. Our World.</a>
+                                <a class="mobile-nav-link" href="#">See all acticles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- AG REWARDS/SIGN IN -->
+                <div class="category">
+                    <div class="category-action">
+                        <a href="https://www.americangirl.com/shop/AjaxLogonForm?catalogId=10601&myAcctMain=1&langId=-1&storeId=10651">AG Rewards/Sign in</a>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+		
+		<!-- MARGIN FOR STICKY HEADER -->
+        <div class="header-margin"></div>
+        
+        <!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/header.js"></script>
+        <script src="js/footer.js"></script>
+        <script src="js/bcSwipe.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script>
+			document.addEventListener('DOMContentLoaded', function() {
+
+                // CONNECT WITH US CAROUSEL
+                $('.owl-carousel').owlCarousel({
+                    center:true,
+                    stagePadding: 50,
+                    loop:true,
+                    margin:10,
+                    nav:false,
+                    responsive:{
+                        0:{
+                            items:1
+                        },
+                        500:{
+                            items:3
+                        },
+                        992:{
+                            items:6
+                        }
+                    }
+                })
+
+                //MATCH HEIGHT OF ELEMENTS
+                function matchHeight(element) {
+                    $(window).on("load resize", function() {
+                        var divHeight = 0;
+                        $(element).css('height','auto');
+                        $(element).each(function() {
+                            if($(this).height() > divHeight) {
+                                divHeight = $(this).height();
+                            }
+                        });
+                        if(window.innerWidth >= 768) {
+                            $(element).height(divHeight);
+                        } else {
+                            $(element).css('height','auto');
+                        }
+                    });
+                }
+
+			});
+		</script>
+    </body>
+</html>
